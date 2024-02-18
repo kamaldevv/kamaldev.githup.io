@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Page</title>
+    <style>
+        body, h5 {
+            padding: 0;
+            margin: 0;
+            font-family: arial;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.265);
+            background-image: linear-gradient(to right, rgba(89, 4, 4, 0.339), rgba(6, 6, 109, 0.327));
+            color:rgba(255, 255, 255, 0.921);
+            font-size: 6em;
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+           
+        }
+        .video-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -1;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h5>Kamal Dev </h5>
+        <video src="media/07.mp4" 
+        class="video-bg"
+        autoplay
+        muted
+        loop
+        ></video>       
+    </div>
+</body>
+</html>
